@@ -8106,34 +8106,34 @@
   <global id="wire3" color="#2fac02" />
   <global id="wire4" color="#ffff00" />
 
-  <Npc Id="17" Name="Merchant" />
-  <Npc Id="18" Name="Nurse" />
-  <Npc Id="19" Name="Arms Dealer" />
-  <Npc Id="20" Name="Dryad" />
-  <Npc Id="22" Name="Guide" />
-  <Npc Id="37" Name="Old Man" />
-  <Npc Id="38" Name="Demolitionist" />
-  <Npc Id="54" Name="Clothier" />
-  <Npc Id="107" Name="Goblin Tinkerer" />
-  <Npc Id="108" Name="Wizard" />
-  <Npc Id="124" Name="Mechanic" />
-  <Npc Id="142" Name="Santa Claus" />
-  <Npc Id="160" Name="Truffle" />
-  <Npc Id="178" Name="Steampunker" />
-  <Npc Id="207" Name="Dye Trader" />
-  <Npc Id="208" Name="Party Girl" />
-  <Npc Id="209" Name="Cyborg" />
-  <Npc Id="227" Name="Painter" />
-  <Npc Id="228" Name="Witch Doctor" />
-  <Npc Id="229" Name="Pirate" />
-  <Npc Id="353" Name="Stylist" />
-  <Npc Id="369" Name="Angler" />
-  <Npc Id="441" Name="Tax Collector" />
-  <Npc Id="550" Name="Tavernkeep" />
-  <Npc Id="588" Name="Golfer" />
-  <Npc Id="633" Name="Zoologist" />
-  <Npc Id="637" Name="Town Cat" />
-  <Npc Id="638" Name="Town Dog" />
-  <Npc Id="656" Name="Town Bunny" />
-  <Npc Id="663" Name="Princess" />
+  <Npc Id="17" Name="商人" />
+  <Npc Id="18" Name="护士" />
+  <Npc Id="19" Name="军火商" />
+  <Npc Id="20" Name="树妖" />
+  <Npc Id="22" Name="向导" />
+  <Npc Id="37" Name="老人" />
+  <Npc Id="38" Name="爆破专家" />
+  <Npc Id="54" Name="服装商" />
+  <Npc Id="107" Name="哥布林工匠" />
+  <Npc Id="108" Name="巫师" />
+  <Npc Id="124" Name="机械师" />
+  <Npc Id="142" Name="圣诞老人" />
+  <Npc Id="160" Name="松露人" />
+  <Npc Id="178" Name="蒸汽朋克人" />
+  <Npc Id="207" Name="染料商" />
+  <Npc Id="208" Name="派对女孩" />
+  <Npc Id="209" Name="机器侠" />
+  <Npc Id="227" Name="油漆工" />
+  <Npc Id="228" Name="巫医" />
+  <Npc Id="229" Name="海盗" />
+  <Npc Id="353" Name="发型师" />
+  <Npc Id="369" Name="渔夫" />
+  <Npc Id="441" Name="税收官" />
+  <Npc Id="550" Name="酒馆老板" />
+  <Npc Id="588" Name="高尔夫球手" />
+  <Npc Id="633" Name="动物学家" />
+  <Npc Id="637" Name="城镇猫咪" />
+  <Npc Id="638" Name="城镇狗狗" />
+  <Npc Id="656" Name="城镇兔兔" />
+  <Npc Id="663" Name="公主" />
 </tiles>

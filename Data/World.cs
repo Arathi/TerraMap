@@ -1412,9 +1412,14 @@ namespace TerraMap.Data
         flag = reader.ReadBoolean();
 
         if (nPC.Name == nPC.Type)
+        {
           nPC.DisplayName = nPC.Name;
+        }
         else
-          nPC.DisplayName = $"{nPC.Name} the {nPC.Type}";
+        {
+          nPC.DisplayName = $"{nPC.Type} {nPC.Name}";
+        }
+          
 
         this.NPCs.Add(nPC);
       }

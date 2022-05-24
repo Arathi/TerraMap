@@ -100,8 +100,8 @@
   </Window.InputBindings>
   <DockPanel LastChildFill="True">
     <Menu DockPanel.Dock="Top" IsMainMenu="True">
-      <MenuItem Header="_File">
-        <MenuItem Header="Open _World" ItemsSource="{Binding WorldFiles}" SubmenuOpened="OnWorldsDropDownOpened">
+      <MenuItem Header="文件(_F)">
+        <MenuItem Header="快速打开世界(_W)" ItemsSource="{Binding WorldFiles}" SubmenuOpened="OnWorldsDropDownOpened">
           <MenuItem.ItemTemplate>
             <DataTemplate>
               <TextBlock Text="{Binding Name}" ToolTip="{Binding FileInfo.FullName}" />
@@ -122,7 +122,7 @@
             </Style>
           </MenuItem.Resources>
         </MenuItem>
-        <MenuItem Header="Open _Player" ItemsSource="{Binding MapFiles}" SubmenuOpened="OnMapsDropDownOpened">
+        <MenuItem Header="快速打开玩家(_P)" ItemsSource="{Binding MapFiles}" SubmenuOpened="OnMapsDropDownOpened">
           <MenuItem.ItemTemplate>
             <DataTemplate>
               <TextBlock Text="{Binding Name}" ToolTip="{Binding FileInfo.FullName}" />
@@ -143,50 +143,50 @@
             </Style>
           </MenuItem.Resources>
         </MenuItem>
-        <MenuItem Command="Open" Header="_Open World...">
+        <MenuItem Command="Open" Header="打开世界...(_O)">
           <MenuItem.Icon>
             <local:AutoGreyableImage Source="Resources/OpenFolder_16x.png" Width="16" />
           </MenuItem.Icon>
         </MenuItem>
-        <MenuItem Command="local:Commands.OpenPlayerMapFile" Header="Open Player Map...">
+        <MenuItem Command="local:Commands.OpenPlayerMapFile" Header="打开玩家地图...">
           <MenuItem.Icon>
             <local:AutoGreyableImage Source="Resources/OpenFile_16x.png" Width="16" />
           </MenuItem.Icon>
         </MenuItem>
-        <MenuItem Command="Save" Header="_Save...">
+                <MenuItem Command="Save" Header="保存...(_S)">
           <MenuItem.Icon>
             <local:AutoGreyableImage Source="Resources/Save.png" Width="16" />
           </MenuItem.Icon>
         </MenuItem>
-        <MenuItem Command="local:Commands.ExportHighlightedTilePositions" Header="_Export Highlighted Tile Positions..." />
+                <MenuItem Command="local:Commands.ExportHighlightedTilePositions" Header="导出高亮块位置...(_E)" />
           <Separator />
-        <MenuItem Command="Close" Header="E_xit" InputGestureText="Alt+F4" />
+        <MenuItem Command="Close" Header="退出(_X)" InputGestureText="Alt+F4" />
       </MenuItem>
-      <MenuItem Header="_View">
-        <MenuItem Command="local:Commands.ZoomToOriginal" Header="Zoom to 100%">
+      <MenuItem Header="查看(_V)">
+        <MenuItem Command="local:Commands.ZoomToOriginal" Header="缩放至100%">
           <MenuItem.Icon>
             <local:AutoGreyableImage Source="Resources/zoomOriginal.png" Width="16" />
           </MenuItem.Icon>
         </MenuItem>
-        <MenuItem Command="local:Commands.ZoomToFit" Header="Zoom to _Fit">
+        <MenuItem Command="local:Commands.ZoomToFit" Header="缩放至合适大小(_F)">
           <MenuItem.Icon>
             <local:AutoGreyableImage Source="Resources/zoomFit.png" Width="16" />
           </MenuItem.Icon>
         </MenuItem>
         <Separator />
-        <MenuItem Command="DecreaseZoom" Header="Zoom _Out" InputGestureText="-">
+        <MenuItem Command="DecreaseZoom" Header="缩小(_O)" InputGestureText="-">
           <MenuItem.Icon>
             <local:AutoGreyableImage Source="Resources/zoomOut.png" Width="16" />
           </MenuItem.Icon>
         </MenuItem>
-        <MenuItem Command="IncreaseZoom" Header="Zoom _In" InputGestureText="+">
+        <MenuItem Command="IncreaseZoom" Header="放大(_I)" InputGestureText="+">
           <MenuItem.Icon>
             <local:AutoGreyableImage Source="Resources/zoomIn.png" Width="16" />
           </MenuItem.Icon>
         </MenuItem>
         <Separator />
-        <MenuItem IsChecked="{Binding IsHighlighting}" Click="OnToggleIsHighlighting" Header="Highlight All" />
-        <MenuItem IsChecked="{Binding World.InvertHighlight}" Click="OnToggleInvertHighlight" Header="Invert Highlight" />
+        <MenuItem IsChecked="{Binding IsHighlighting}" Click="OnToggleIsHighlighting" Header="高亮所有" />
+        <MenuItem IsChecked="{Binding World.InvertHighlight}" Click="OnToggleInvertHighlight" Header="反转高亮" />
         <Separator />
         <MenuItem Command="Refresh">
           <MenuItem.Icon>
@@ -199,27 +199,27 @@
           </MenuItem.Icon>
         </MenuItem>
       </MenuItem>
-      <MenuItem Header="_Navigate">
-        <MenuItem Command="Find" Header="Select Block/Item..." InputGestureText="Ctrl+F" />
-        <MenuItem Command="PreviousPage" Header="Previous Match" InputGestureText="Shift+F3">
+      <MenuItem Header="导航(_N)">
+        <MenuItem Command="Find" Header="查找方块/物品..." InputGestureText="Ctrl+F" />
+        <MenuItem Command="PreviousPage" Header="上一个匹配结果" InputGestureText="Shift+F3">
           <MenuItem.Icon>
             <local:AutoGreyableImage Source="Resources/Previous.png" Width="16" />
           </MenuItem.Icon>
         </MenuItem>
-        <MenuItem Command="BrowseStop" Header="Clear Match">
+        <MenuItem Command="BrowseStop" Header="清除匹配结果">
           <MenuItem.Icon>
             <local:AutoGreyableImage Source="Resources/Cancel.png" Width="16" />
           </MenuItem.Icon>
         </MenuItem>
-        <MenuItem Command="NextPage" Header="Next Match" InputGestureText="F3">
+        <MenuItem Command="NextPage" Header="下一个匹配结果" InputGestureText="F3">
           <MenuItem.Icon>
             <local:AutoGreyableImage Source="Resources/Next.png" Width="16" />
           </MenuItem.Icon>
         </MenuItem>
         <Separator />
-        <MenuItem Command="local:Commands.NavigateToSpawn" Header="_Spawn" InputGestureText="Home" />
-        <MenuItem Command="local:Commands.NavigateToDungeon" Header="_Dungeon" InputGestureText="End" />
-        <MenuItem x:Name="menuItemNpcs" Header="_NPCs" ItemsSource="{Binding NPCs}">
+        <MenuItem Command="local:Commands.NavigateToSpawn" Header="出生点(_S)" InputGestureText="Home" />
+        <MenuItem Command="local:Commands.NavigateToDungeon" Header="地牢(_D)" InputGestureText="End" />
+        <MenuItem x:Name="menuItemNpcs" Header="_NPC位置" ItemsSource="{Binding NPCs}">
           <MenuItem.ItemTemplate>
             <DataTemplate>
               <TextBlock Text="{Binding DisplayName}" />
